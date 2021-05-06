@@ -17,4 +17,6 @@ RUN /bin/bash -c "pip3 install --no-cache-dir -r <(pipenv lock -r)"
 ADD . /httpbin
 RUN pip3 install --no-cache-dir /httpbin
 
-CMD ["gunicorn", "-b", "httpbin:app", "-k", "gevent"]
+EXPOSE 8000
+
+CMD ["gunicorn", "--bind", ":8000", "httpbin:app", "-k", "gevent"]

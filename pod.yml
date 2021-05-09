@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpbin-deploy
@@ -22,7 +22,7 @@ spec:
           name: guicorn
 
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: httpbin-deploy

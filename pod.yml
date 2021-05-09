@@ -1,5 +1,5 @@
 apiVersion: extensions/v1beta1
-kind: ReplicationController
+kind: Deployment
 metadata:
   name: httpbin-deploy
   labels:

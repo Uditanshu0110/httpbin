@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: httpbin
-        image: uditanshu/newnode
+        image: uditanshu/newimage
         ports:
         - containerPort: 8000
           name: guicorn
